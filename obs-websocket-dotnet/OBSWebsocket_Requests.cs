@@ -752,6 +752,14 @@ namespace OBSWebsocketDotNet
         }
 
         /// <summary>
+        /// Closes the main window
+        /// </summary>
+        public void CloseMainWindow()
+        {
+            SendRequest(nameof(CloseMainWindow));
+        }
+
+        /// <summary>
         /// Get the name of the currently selected preview scene. 
         /// Note: Triggers an error if Studio Mode is disabled
         /// </summary>
